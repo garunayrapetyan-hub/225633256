@@ -1,0 +1,34 @@
+OMNIVA FOR ANDROID - HOW TO GET THE APK
+=======================================
+
+This folder is a complete Android app (Omniva). Your tasks are saved inside the app
+on your phone, so you open the app and add information directly. No link needed.
+
+OPTION A - build the APK for free in the cloud (no Android Studio needed)
+-------------------------------------------------------------------------
+1. Create a free account at github.com and make a new repository (private is fine).
+2. Upload everything from this folder into the repository
+   (drag the files and folders into the "uploading an existing file" page).
+3. The folder ".github" is hidden on some computers. If it did not upload:
+   in the repository click  Add file > Create new file,  type this exact name:
+       .github/workflows/build-apk.yml
+   and paste the text of the file build-apk.yml from this folder. Click Commit.
+4. Open the "Actions" tab, choose "Build Omniva APK", click "Run workflow".
+   Wait about 3 to 5 minutes until it shows a green tick.
+5. Open the finished run, scroll to "Artifacts", download "Omniva-apk" and unzip it.
+   Inside is Omniva.apk.
+6. Send Omniva.apk to your phone (cable, Telegram, Google Drive, email).
+7. On the phone tap the file. If asked, allow "Install unknown apps" for the app you
+   used to open it. Tap Install. Omniva appears with its own icon.
+
+OPTION B - Android Studio
+-------------------------
+Open this folder in Android Studio, wait for the sync, then
+Build > Build Bundle(s) / APK(s) > Build APK(s). Copy the APK to your phone.
+
+Notes
+-----
+- The power grid screens use sample numbers. The Task Manager and calendar are fully
+  usable and keep what you type.
+- Data lives only on that phone. Uninstalling the app removes it.
+- The Android back button closes pop-ups and goes back one screen.
